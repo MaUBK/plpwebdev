@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="main-heading">My Budget Tracker</h1>
+    <p class="subheading">Track your income and expenses in one place.</p>
+  </header>
+
+  <main>
+    <section id="add-expense" class="card">
+      <h2>Add Expense</h2>
+
+      <div class="form-row">
+        <label for="expense-name">Expense Name</label>
+        <input id="expense-name" type="text" placeholder="e.g., Groceries">
+      </div>
+
+      <div class="form-row">
+        <label for="expense-amount">Amount</label>
+        <input id="expense-amount" type="number" placeholder="0.00" step="0.01">
+      </div>
+
+      <div class="form-row">
+        <label for="expense-category">Category</label>
+        <select id="expense-category">
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn">Add (placeholder)</button>
+    </section>
+
+    <section id="your-expenses" class="card placeholder">
+      <h2>Your Expenses</h2>
+      <p class="empty-text">No expenses yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static skeleton for the Budget Tracker project.</p>
+  </footer>
+</body>
+</html>
