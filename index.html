@@ -8,6 +8,7 @@
 </head>
 <body>
   <header class="site-header">
+    <img src="src/logo.png" alt="Budget Tracker Logo" width="64" />
     <h1 id="main-heading">My Budget Tracker</h1>
     <p class="subheading">Track your income and expenses in one place.</p>
   </header>
@@ -16,32 +17,87 @@
     <section id="add-expense" class="card">
       <h2>Add Expense</h2>
 
-      <div class="form-row">
-        <label for="expense-name">Expense Name</label>
-        <input id="expense-name" type="text" placeholder="e.g., Groceries">
-      </div>
+      <form id="expense-form">
+        <div class="form-row">
+          <label for="expense-name">Expense Name</label>
+          <input id="expense-name" type="text" placeholder="e.g., Groceries">
+        </div>
 
-      <div class="form-row">
-        <label for="expense-amount">Amount</label>
-        <input id="expense-amount" type="number" placeholder="0.00" step="0.01">
-      </div>
+        <div class="form-row">
+          <label for="expense-amount">Amount</label>
+          <input id="expense-amount" type="number" placeholder="0.00" step="0.01">
+        </div>
 
-      <div class="form-row">
-        <label for="expense-category">Category</label>
-        <select id="expense-category">
-          <option value="food">Food</option>
-          <option value="transport">Transport</option>
-          <option value="entertainment">Entertainment</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+        <div class="form-row">
+          <label for="expense-category">Category</label>
+          <select id="expense-category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-      <button type="button" class="btn">Add (placeholder)</button>
+        <button type="button" class="btn">Add Expense</button>
+      </form>
     </section>
 
-    <section id="your-expenses" class="card placeholder">
+    <section id="your-expenses" class="card">
       <h2>Your Expenses</h2>
-      <p class="empty-text">No expenses yet.</p>
+      <table id="expenses-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Groceries</td>
+            <td>Kes 45.20</td>
+            <td>Food</td>
+            <td>2026-08-25</td>
+          </tr>
+          <tr>
+            <td>Bus Fare</td>
+            <td>Kes 2.50</td>
+            <td>Transport</td>
+            <td>2026-08-26</td>
+          </tr>
+          <tr>
+            <td>Monthly Rent</td>
+            <td>Kes 600.00</td>
+            <td>Rent</td>
+            <td>2026-08-01</td>
+          </tr>
+          <tr>
+            <td>Movie Night</td>
+            <td>Kes 12.00</td>
+            <td>Entertainment</td>
+            <td>2026-08-20</td>
+          </tr>
+          <tr>
+            <td>Coffee</td>
+            <td>Kes 3.75</td>
+            <td>Other</td>
+            <td>2026-08-27</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wxf5XmWi1M4" title="Budgeting Tips Playlist Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <details>
+        <summary>How to use this tracker</summary>
+        <p>Fill the form above and click "Add Expense" to record an expense. Later we'll hook this up with JavaScript to save entries.</p>
+      </details>
     </section>
   </main>
 

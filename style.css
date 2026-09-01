@@ -26,3 +26,34 @@ h1 { font-size: 2rem; margin-bottom: 0.25rem; }
 .empty-text { color: #aa6a00; }
 
 .site-footer { text-align: center; font-size: 0.85rem; color: #888; margin-top: 20px; }
+
+/* Expenses table styles */
+#expenses-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+#expenses-table th, #expenses-table td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+#expenses-table thead { background: #2c3e50; color: #fff; }
+
+/* Pseudo-class based on position: alternating rows */
+#expenses-table tbody tr:nth-child(even) { background: #f9fbff; }
+
+/* Hover state for table rows */
+#expenses-table tbody tr:hover { background: #eaf4ff; }
+
+/* Direct child selector example */
+.card > h2 { margin-bottom: 12px; }
+
+/* Descendant selector example */
+#your-expenses td { color: #333; }
+
+/* Negation pseudo-class example */
+input:not([type="submit"]) { box-shadow: none; }
+
+/* Focus state for inputs */
+input:focus, select:focus { border-color: #3498db; box-shadow: 0 0 0 3px rgba(52,152,219,0.12); }
+
+/* Button pointer cursor on hover */
+.btn { cursor: pointer; }
+
+.video-wrapper { margin-top: 12px; }
+
+/* Header logo */
+.site-header img { vertical-align: middle; margin-right: 10px; border-radius: 6px; }
